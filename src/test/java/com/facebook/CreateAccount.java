@@ -29,7 +29,7 @@ public class CreateAccount {
 	public void click_create_a_new_account() {
 	   WebElement create=driver.findElement(By.xpath("//a[text()='Create new account']"));
 	   create.click();
-		System.out.println("con");
+		System.out.println("confl");
 	}
 	@When("Enter firstname and lastname {string} {string}")
 	public void enter_firstname_and_lastname(String string, String string2) {
