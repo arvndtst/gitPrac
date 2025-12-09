@@ -17,6 +17,7 @@ import io.cucumber.java.en.When;
 
 public class CreateAccount {
 	
+	
 	static WebDriver driver;
 	@Given("Launch browser and facebook {string}")
 	public void launch_browser_and_facebook(String string) {
@@ -24,13 +25,13 @@ public class CreateAccount {
 	    driver.manage().window().maximize();
 	    driver.get(string);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	    String url=driver.getCurrentUrl();
+
 	}  
 	@When("Click create a new account")
 	public void click_create_a_new_account() {
 	   WebElement create=driver.findElement(By.xpath("//a[text()='Create new account']"));
 	   create.click();
-	
+
 	}
 	@When("Enter firstname and lastname {string} {string}")
 	public void enter_firstname_and_lastname(String string, String string2) {
