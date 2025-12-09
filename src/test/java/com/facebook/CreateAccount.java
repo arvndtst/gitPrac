@@ -24,6 +24,7 @@ public class CreateAccount {
 	    driver.manage().window().maximize();
 	    driver.get(string);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    String url=driver.getCurrentUrl();
 	}  
 	@When("Click create a new account")
 	public void click_create_a_new_account() {
